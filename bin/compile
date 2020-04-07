@@ -36,7 +36,7 @@ echo "***"
 echo POST
 echo "***"
 
-curl -sSf "${API}/releases/" \
+curl -sSf --verbose "${API}/releases/" \
   -X POST \
   -H "Authorization: Bearer ${SENTRY_AUTH_TOKEN}" \
   -H 'Content-Type: application/json' \
