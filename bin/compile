@@ -26,7 +26,7 @@ API="https://sentry.io/api/0/organizations/${SENTRY_ORG}/"
 # Create a release
 echo "-----> Creating Sentry release ${SOURCE_VERSION} for organization '${SENTRY_ORG}' in project '${SENTRY_PROJECT}'"
 
-curl -sSf --verbose "${API}/releases/" \
+curl -sSf "${API}/releases/" \
   -X POST \
   -H "Authorization: Bearer ${SENTRY_AUTH_TOKEN}" \
   -H 'Content-Type: application/json' \
