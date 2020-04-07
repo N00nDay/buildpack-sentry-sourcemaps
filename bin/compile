@@ -33,6 +33,8 @@ echo "Authorization: Bearer ${SENTRY_AUTH_TOKEN}"
 echo "***"
 echo "{\"version\": \"${SOURCE_VERSION}\"}"
 echo "***"
+echo POST
+echo "***"
 
 curl -sSf "${API}/releases/" \
   -X POST \
